@@ -1,0 +1,26 @@
+@media screen and (max-width: 649px) {
+  div.ngg-galleryoverview {
+    display: block !important;
+    text-align: center;
+    .ngg-gallery-thumbnail-box {
+      float: none;
+      display: inline-block;
+      margin: auto;
+    }
+  }
+}
+/* note: use inline-block on a div container of <figure> and <img> to match height size */
+
+/* element insider wrapper */
+.elementor-navigation ul {
+    list-style: none;
+    margin: 0;
+    display: inline-block;
+    width: 1140px;
+    text-align: left;
+}
+/* div or nav wrapper */
+nav#elementor-navigation {
+  margin: 0 auto;
+  text-align: center;
+}

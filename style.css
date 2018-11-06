@@ -1,0 +1,417 @@
+/*!
+Theme Name:   GeneratePress Child
+Template:     GeneratePress
+Theme URI:    http://webmacz.cf/
+Author:       Raymacz
+Author URI:   http://webmacz.cf/
+Version:      1.0.0
+Description:  GeneratePress child theme.
+License:      GNU General Public License v3
+License URI:  http://www.gnu.org/licenses/gpl-3.0.html
+
+This theme, like WordPress, is licensed under the GPL..
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+/* Put your custom CSS styles here. */
+/*
+Navigation
+blog article
+blog article sticky
+*/
+
+/* Navigation start */
+nav#site-navigation ul#menu-main-menu>li>a  {
+   padding-top: 5px;
+   padding-bottom: 5px;
+   /* background-color: blue; */
+}
+/* 1st-child */
+nav#site-navigation.navbar-shrink ul#menu-main-menu>li>a {
+  transition: all 1s ease-out;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+nav#site-navigation.navbar-shrink {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: rgba(33, 37, 41, 0.5);
+}
+/* Navigation end */
+
+/* blog article start */
+  article .inside-article {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 0!important;
+}
+
+  header.entry-header {
+    word-wrap: break-word;
+        text-align: center;
+        padding: 25px 25px 25px 25px;
+        background-color: #778899;
+        background-image: linear-gradient(to right, #add 0%, rgb(119, 136, 153) 0%), linear-gradient(to left, rgb(119, 136, 153) 96.7%, #add 90%);
+        background-clip: content-box, padding-box;
+}
+.entry-title, .entry-title a {
+  color: white;
+  font-weight: 500;
+}
+.entry-title a {
+    font-size: 1.2em;
+    line-height: 3rem;
+}
+.entry-title a:hover {
+    border-bottom: 3px solid #ffc107;
+}
+.entry-meta {
+  padding-bottom: 10px;
+}
+span.byline {
+    color: #fff;
+}
+.posted-on time.entry-date {
+    color: lightskyblue;
+}
+.byline span.author-name {
+    color: lightcoral;
+}
+article .post-image {
+    margin-top: 0;
+}
+.entry-content {
+    padding: 40px;
+}
+.inside-article .page-header-image-single {
+  margin-bottom: 0 !important;
+}
+div.entry-summary {
+    margin: 0 25px 0 25px;
+    padding: 25px 25px 0 25px;
+    position: relative;
+    top: -20px;
+    background-color: #fff;
+}
+footer.entry-meta {
+    margin-top: 2em;
+}
+footer.entry-meta {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 25px 25px;
+}
+
+
+
+/* blog article end */
+
+/* blog article sticky start */
+#main>article {
+    position: relative;
+}
+.sticky::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 2em;
+    height: 2em;
+    background-color: lightgray;
+    right: 0;
+    top: 0;
+    border-width: 0 2em 2em 0;
+    border-color: #f8f9fa rgba(228, 226, 226, 0.5) #f8f9fa;
+    border-style: solid;
+    -webkit-box-shadow: -1px 2px 2px rgba(26, 26, 26, 0.1);
+    box-shadow: -1px 2px 2px rgba(26, 26, 26, 0.1);
+}
+/* blog article sticky end */
+
+/* blog 2-way pagination start */
+footer.entry-meta nav#nav-below {
+    margin: 20px 10% 0px;
+}
+
+div.nav-previous, div.nav-next {
+    background-color: lightslategrey;
+}
+div.nav-previous:hover, div.nav-next:hover {
+    background-color: #add;
+}
+footer.entry-meta .nav-links a {
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+}
+footer.entry-meta .nav-links span {
+    color: white;
+}
+.nav-links span.post-title {
+  font-weight: 500;
+}
+footer.entry-meta div.nav-previous {
+    /* border-top-left-radius: 45px; */
+    /* border-bottom-left-radius: 5px; */
+    border-top-left-radius: 10px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+footer.entry-meta div.nav-next {
+    /* border-top-right-radius: 45px; */
+    border-top-right-radius: 10px;
+    text-align: left;
+    /* border-bottom-right-radius: 5px; */
+}
+footer.entry-meta .nav-links span.prev, footer.entry-meta .nav-links span.next {
+    font-size: .8em;
+    text-transform: uppercase;
+}
+footer.entry-meta div.nav-previous .prev:before, footer.entry-meta div.nav-next .next:after {
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    speak: none;
+    font-family: GeneratePress;
+    text-decoration: inherit;
+    position: relative;
+    display: inline;
+    margin: auto 10px;
+}
+div.nav-next .next:before {
+    content: "";
+}
+div.nav-next .next:after {
+    content: "\f105";
+}
+.nav-links span.post-title {
+    display: block;
+    font-size: 1.2em;
+}
+nav#nav-below {
+    padding-top: 80px;
+    border-top: 2px solid #eee;
+}
+/* blog 2-way pagination end */
+
+/* continue reading read more start*/
+div.cont-read {
+  text-align: right;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+div.cont-read a {
+  background-color: lightslategray;
+  color: #fff;
+  padding: 0.5em 1em;
+  display: block;
+}
+div.cont-read a:hover {
+  background-color: #add;
+}
+
+/* continue reading read more end*/
+
+/*blog multiple pagination start */
+.paging-navigation .nav-links {
+    text-align: center;
+}
+nav.paging-navigation a.page-numbers, nav.paging-navigation span.dots {
+  border-right: 1px solid #fff;
+  padding: .5em .8em;
+}
+nav.paging-navigation a.page-numbers:hover {
+  margin: auto 5px;
+  border: 2px solid lightslategray;
+  background-color: #02b4ff21;
+  /* color: #00abf385; */
+  color: lightslategray;
+  font-weight: bold;
+  border-radius: 25px;
+}
+span.page-numbers.current, nav.paging-navigation a.page-numbers, nav.paging-navigation span.dots {
+  transform: scale(1) rotate(16deg) translateX(0px) translateY(0px) skewX(-4deg) skewY(-16deg);
+  display: inline-block;
+  background-color: lightslategray;
+  color: white;
+}
+span.page-numbers.current {
+  background-color: #082a46 !important;
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+  padding: 0.8em 1.2em;
+  border-radius: 5px;
+}
+a.next.page-numbers {
+  border-top-right-radius: 10px;
+  border-right: 1.5px solid #fff;
+}
+a.prev.page-numbers {
+    border-top-left-radius: 10px;
+    border-left: 1.5px solid #fff;
+}
+
+/*blog multiple pagination end */
+
+/*slider elementor gradient below start */
+.slick-slide:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 24%;
+    left: 0;
+    bottom: -1px;
+    z-index: 1;
+    background: linear-gradient( transparent 40%, #1d2120 200% );
+}
+/*slider elementor gradient below end */
+
+/*custom grid blog start*/
+@media (min-width: 1025px) {
+  div#primary.grid-75 {
+      width: 70%;
+  }
+  div#right-sidebar.grid-25 {
+      width: 30%;
+  }
+}
+/*custom grid blog end*/
+
+/*widget blog start*/
+#right-sidebar aside {
+    padding: 25px;
+}
+.widget a:hover {
+  border-bottom: 3px solid #6ec1e4;
+}
+.widget li a, .widget .tagcloud a {
+  color: #3a3a3a;
+}
+h2.widget-title {
+    background-color: #778899;
+    display: block;
+    padding: 5px 8px;
+    color: #fff !important;
+    position: relative;
+    background-image: linear-gradient(to right, #778899 95%, rgb(170, 221, 221) 95%);
+    background-clip: padding-box;
+}
+h2.widget-title:before {
+    content: '\f07c';
+    margin-right: 5px;
+    font-family: fontawesome;
+}
+h2.widget-title:after {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    bottom: -5px;
+    left: 22px;
+    border-left: 6px solid rgba(0, 0, 0, 0);
+    border-right: 6px solid rgba(0, 0, 0, 0);
+    border-top: 6px solid #778899;
+}
+aside.widget_archive h2.widget-title:before {
+    content: '\f187';
+}
+aside.widget_recent_entries h2.widget-title:before {
+    content: '\f14b';
+}
+aside.widget_calendar h2.widget-title:before {
+    content: '\f133';
+}
+aside.widget_categories h2.widget-title:before {
+    content: '\f00b';
+}
+aside.widget_rss h2.widget-title:before {
+    /* content: '\f09e'; */
+    content: '';
+}
+aside.widget_rss h2.widget-title a {
+    color: white;
+}
+aside.widget_recent_comments h2.widget-title:before {
+    content: '\f0e6';
+}
+aside.widget_text h2.widget-title:before {
+    content: '\f0f6';
+}
+aside.widget_tag_cloud h2.widget-title:before {
+    /* content: '\f0c2'; */
+    content: '\f1be';
+}
+aside.widget_tag_cloud h2.widget-title:before {
+    content: '\f002';
+}
+
+
+/*widget category start */
+.widget li.cat-item {
+    border-bottom: 2px solid #eee;
+    padding: 10px 0 !important;
+    color: #3a3a3a;
+
+}
+ul.children li.cat-item {
+    border-bottom: none;
+}
+/*widget category end */
+
+/* widget calendar start*/
+#wp-calendar {
+  border: none;
+}
+#wp-calendar th, #wp-calendar #prev, #wp-calendar #next {
+    text-align: center;
+    border: none;
+}
+#wp-calendar #prev a, #wp-calendar #next a {
+  color: #3a3a3a;
+  font-weight: 700;
+}
+#wp-calendar tfoot tr, #wp-calendar .pad {
+    background-color: #eee;
+}
+#wp-calendar tfoot td#prev, #wp-calendar td.pad {
+    border: 2px solid white;
+}
+#wp-calendar tbody tr {
+    background-color: #eeeeee;
+}
+#wp-calendar tbody td {
+    border: 1px solid white;
+    text-align: center;
+}
+#wp-calendar td#today {
+    background-color: lightblue;
+}
+#wp-calendar tbody td a {
+  color: white;
+  font-weight: 700;
+  background-color: #6ec1e4;
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 5px 0;
+}
+/*added in myfunctions.js */
+#wp-calendar .prevbtn, #wp-calendar .nextbtn, #wp-calendar thead {
+  background-color: lightgray;
+}
+#wp-calendar caption {
+  font-weight: bold;
+}
+.widget #wp-calendar a:hover {
+  border: none;
+}
+/* widget calendar end*/
+
+/*widget blog end*/
